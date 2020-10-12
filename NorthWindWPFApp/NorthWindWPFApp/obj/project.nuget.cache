@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D0dhST7EVJKheAHP/KZrTuy9qMpaVSrNExKYJZaAwHJZRv8StQECmZLrJcmUwCgpp8JKVbL64ry1+fQfc/p9Gg==",
+  "dgSpecHash": "CVRT5/q1+mRrlQAIQ1r6o3ETUfjZif9ZON8KeWYJXZjkH3qxWCDB2MCxbujnSIsGcUhwdzymBpvyKQF/EBDpvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindWPFApp\\NorthWindWPFApp.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\WPFApps\\NorthWindWPFApp\\NorthWindWPFApp\\NorthWindWPFApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",

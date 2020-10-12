@@ -600,11 +600,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindWPFApp\\NorthWindWPFApp.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\WPFApps\\NorthWindWPFApp\\NorthWindWPFApp\\NorthWindWPFApp.csproj",
       "projectName": "NorthWindWPFApp",
-      "projectPath": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindWPFApp\\NorthWindWPFApp.csproj",
+      "projectPath": "C:\\Users\\user\\source\\repos\\WPFApps\\NorthWindWPFApp\\NorthWindWPFApp\\NorthWindWPFApp.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindWPFApp\\obj\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\WPFApps\\NorthWindWPFApp\\NorthWindWPFApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -620,8 +620,8 @@
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj"
+            "C:\\Users\\user\\source\\repos\\WPFApps\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\WPFApps\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj"
             }
           }
         }

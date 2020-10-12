@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5/yNc0JXcgjiCuPqEn043KQBJFpZS5aUkCq3pMByl/2GhJP9WZ+FijD5FlShndyiuU87QJIOjQTOLGZrchUrGg==",
+  "dgSpecHash": "JsVGbD14wNvxdDeJbJRpwKKdcw/31qi9ExDfpsPESXhzhBbVHidzeWilEJhXfxq3sKuKKG0lfjXcTkq2j6K1+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\WPFApps\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512"
   ],

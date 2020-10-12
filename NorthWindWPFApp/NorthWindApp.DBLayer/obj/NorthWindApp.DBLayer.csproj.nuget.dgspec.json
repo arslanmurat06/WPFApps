@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj": {}
+    "C:\\Users\\user\\source\\repos\\WPFApps\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj": {
+    "C:\\Users\\user\\source\\repos\\WPFApps\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\WPFApps\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj",
         "projectName": "NorthWindApp.DBLayer",
-        "projectPath": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\WPFApps\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\WPFApps\\NorthWindWPFApp\\NorthWindApp.DBLayer\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
