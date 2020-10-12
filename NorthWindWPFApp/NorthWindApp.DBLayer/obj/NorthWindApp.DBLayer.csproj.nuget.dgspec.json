@@ -1,0 +1,56 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj",
+        "projectName": "NorthWindApp.DBLayer",
+        "projectPath": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net452"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net452": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net452": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

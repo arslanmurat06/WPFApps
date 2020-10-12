@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5/yNc0JXcgjiCuPqEn043KQBJFpZS5aUkCq3pMByl/2GhJP9WZ+FijD5FlShndyiuU87QJIOjQTOLGZrchUrGg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindApp.DBLayer\\NorthWindApp.DBLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

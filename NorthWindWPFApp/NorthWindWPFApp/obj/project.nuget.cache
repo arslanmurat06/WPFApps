@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "D0dhST7EVJKheAHP/KZrTuy9qMpaVSrNExKYJZaAwHJZRv8StQECmZLrJcmUwCgpp8JKVbL64ry1+fQfc/p9Gg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\NorthWindWPFApp\\NorthWindWPFApp\\NorthWindWPFApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\materialdesigncolors\\1.2.7\\materialdesigncolors.1.2.7.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\materialdesignthemes\\3.2.0\\materialdesignthemes.3.2.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\mvvmlight\\5.4.1.1\\mvvmlight.5.4.1.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\mvvmlightlibs\\5.4.1.1\\mvvmlightlibs.5.4.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

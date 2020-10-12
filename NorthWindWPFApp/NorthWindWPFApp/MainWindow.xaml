@@ -1,0 +1,68 @@
+﻿<Window x:Class="NorthWindWPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NorthWindWPFApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="450"
+        DataContext="{Binding MainViewModel, Source={StaticResource Locator}}">
+
+        <Window.Resources>
+
+        </Window.Resources>
+    
+        <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Source="C:\Users\user\Desktop\north_wind\logo.jpg"/>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" VerticalAlignment="Center">
+
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock HorizontalAlignment="Center" Grid.Column="0" Text="Username:"/>
+                <TextBox Text="{Binding Path=Username, Mode=TwoWay}" HorizontalAlignment="Left" Grid.Column="1" x:Name="txtUsername" Width="200" Margin="10 0 0 0"/>
+            </Grid>
+
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock HorizontalAlignment="Center" Grid.Column="0" Text="Password:"/>
+                <TextBox x:Name="pswTxt" HorizontalAlignment="Left" Visibility="Hidden" Grid.Column="1" FontSize="14" VerticalAlignment="Center" Width="200"  Margin="10 0 0 0"/>
+                <PasswordBox PasswordChar="*" ToolTip="Enter Your Password" HorizontalAlignment="Left"  FontSize="14"  VerticalAlignment="Center" Grid.Column="1" x:Name="txtPassword" Width="200" Margin="10 0 0 0"/>
+                <Border  Grid.Column="1"  Margin="90 0 0 0" MouseDown="Border_MouseLeftButtonDown" MouseUp="Border_MouseLeftButtonUp">
+                    <TextBlock FontFamily="{StaticResource AwesomeSolid}" Foreground="Black" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property= "Text" Value="&#xf06e;"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Path= IsPasswordShow, Mode=TwoWay}" Value="true">
+                                    <Setter  Property= "Text" Value="&#xf070;"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+                   </Border>
+
+            </Grid>
+
+            <Button Command="{Binding Path=LoginCommand}"  Content="Login" MaxWidth="150" Height="30"/>
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>

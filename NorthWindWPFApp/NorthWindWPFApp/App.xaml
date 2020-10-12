@@ -1,0 +1,15 @@
+﻿<Application x:Class="NorthWindWPFApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:NorthWindWPFApp"
+              xmlns:vm="clr-namespace:NorthWindWPFApp.ViewModels"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <FontFamily x:Key="AwesomeSolid">/Fonts/FontAwesomeSolid.ttf#Font Awesome 5 Free Solid</FontFamily>
+        <FontFamily x:Key="AwesomeRegular">/Fonts/FontAwesomeRegular.ttf#Font Awesome 5 Free Regular</FontFamily>
+        <FontFamily x:Key="AwesomeBrands">/Fonts/FontAwesomeBrands.ttf#Font Awesome 5 Brands</FontFamily>
+
+        <vm:ViewModelLocator x:Key="Locator" />
+    </Application.Resources>
+</Application>
