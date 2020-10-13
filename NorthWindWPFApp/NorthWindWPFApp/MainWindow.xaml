@@ -107,7 +107,7 @@
             </StackPanel>
 
             <Border Width="250"
-                    Height="2"
+                    Height="1"
                     Background="White"
                     Opacity="0.5"
                     />
@@ -141,13 +141,13 @@
             </StackPanel>
 
             <Border Width="250"
-                    Height="2"
+                    Height="1"
                     Background="White"
                     Opacity="0.5"
                     />
 
             <StackPanel Orientation="Horizontal" Margin="0 50 0 0" HorizontalAlignment="Center">
-                <Button Margin="0 0 15 0" Width="100" Height="40" Content="LOGIN"/>
+                <Button Margin="0 0 15 0" Width="100" Height="40" Content="LOGIN" Command="{Binding LoginCommand}"/>
                 <Button  Width="100" Height="40" Content="REGISTER"/>
             </StackPanel>
 

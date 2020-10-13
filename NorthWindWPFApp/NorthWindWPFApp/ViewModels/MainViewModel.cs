@@ -19,6 +19,7 @@ namespace NorthWindWPFApp.ViewModels
 
         public ICommand LoginCommand { get; private set; }
 
+        public Action CloseScreen;
         #endregion
 
         public Func<string> GetPassword { get; set; }
@@ -31,8 +32,9 @@ namespace NorthWindWPFApp.ViewModels
 
         private void LoginAsync()
         {
-            Debug.WriteLine($"Username : {Username} Password: {Password}");
-            var a = _repository.GetCategories();
+            var employeeScreen = new EmployeeOverview();
+            employeeScreen.Show();
+            CloseScreen?.Invoke();
 
         }
 

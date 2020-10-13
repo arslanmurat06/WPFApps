@@ -36,8 +36,15 @@ namespace NorthWindWPFApp
             if(viewModel != null)
             {
                 viewModel.GetPassword = new Func<string>(GetPassword);
+                viewModel.CloseScreen = CloseScreen;
             }
 
+
+        }
+
+        private void  CloseScreen()
+        {
+            this.Close();
         }
 
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
