@@ -11,5 +11,6 @@
         <FontFamily x:Key="AwesomeBrands">/Fonts/FontAwesomeBrands.ttf#Font Awesome 5 Brands</FontFamily>
 
         <vm:ViewModelLocator x:Key="Locator" />
+
     </Application.Resources>
 </Application>

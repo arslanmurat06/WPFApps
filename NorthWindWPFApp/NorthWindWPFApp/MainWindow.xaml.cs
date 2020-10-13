@@ -56,22 +56,29 @@ namespace NorthWindWPFApp
 
         private void ChangePasswordBoxVisibility(bool isShow)
         {
-            if (isShow)
-            {
-                pswTxt.Text = GetPassword();
-                pswTxt.Visibility = Visibility.Visible;
-                pswTxt.IsEnabled = false;
-                txtPassword.Visibility = Visibility.Hidden;
-            }
-            else
-            {
-                pswTxt.Visibility = Visibility.Hidden;
-                txtPassword.Visibility = Visibility.Visible;
-            }
+            //if (isShow)
+            //{
+            //    pswTxt.Text = GetPassword();
+            //    pswTxt.Visibility = Visibility.Visible;
+            //    pswTxt.IsEnabled = false;
+            //    txtPassword.Visibility = Visibility.Hidden;
+            //}
+            //else
+            //{
+            //    pswTxt.Visibility = Visibility.Hidden;
+            //    txtPassword.Visibility = Visibility.Visible;
+            //}
         }
         public string GetPassword()
         {
             return txtPassword.Password;
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
+
         }
     }
 }
