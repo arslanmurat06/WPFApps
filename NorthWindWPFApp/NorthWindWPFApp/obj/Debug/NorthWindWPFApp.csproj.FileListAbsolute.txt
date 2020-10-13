@@ -70,3 +70,7 @@ C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindWPFApp\obj\Debug\Nor
 C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindWPFApp\obj\Debug\NorthWindWPFApp.pdb
 C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindWPFApp\obj\Debug\EmployeeOverview.g.cs
 C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindWPFApp\obj\Debug\EmployeeOverview.baml
+C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindWPFApp\obj\Debug\UserControls\EmployeeCardUserControl.g.cs
+C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindWPFApp\obj\Debug\UserControls\EmployeeOverviewUserControl.g.cs
+C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindWPFApp\obj\Debug\UserControls\EmployeeCardUserControl.baml
+C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindWPFApp\obj\Debug\UserControls\EmployeeOverviewUserControl.baml

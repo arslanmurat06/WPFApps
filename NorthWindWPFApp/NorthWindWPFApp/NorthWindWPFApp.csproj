@@ -59,6 +59,12 @@
     <Compile Include="EmployeeOverview.xaml.cs">
       <DependentUpon>EmployeeOverview.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\EmployeeCardUserControl.xaml.cs">
+      <DependentUpon>EmployeeCardUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EmployeeOverviewUserControl.xaml.cs">
+      <DependentUpon>EmployeeOverviewUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\EmployeeOverviewViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\ViewModelLocator.cs" />
@@ -78,6 +84,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UserControls\EmployeeCardUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\EmployeeOverviewUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

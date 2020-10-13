@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:NorthWindWPFApp"
         mc:Ignorable="d" Height="600" Width="1024"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:uControls="clr-namespace:NorthWindWPFApp.UserControls"
         WindowStartupLocation="CenterScreen"
         DataContext="{Binding EmployeeOverviewViewModel, Source={StaticResource Locator}}" 
          WindowStyle="None"
@@ -87,6 +88,10 @@
 
         </Grid>
 
+        <ScrollViewer Grid.Column="1" Grid.Row="1">
 
+            <uControls:EmployeeOverviewUserControl DataContext="{Binding Employees}" />
+
+        </ScrollViewer>
     </Grid>
 </Window>
