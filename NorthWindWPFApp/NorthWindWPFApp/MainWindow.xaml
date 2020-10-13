@@ -10,6 +10,7 @@
         WindowStyle="None" ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         MouseDown="Window_MouseDown"
+        FocusManager.FocusedElement="{Binding ElementName=txtUsername}"
         DataContext="{Binding MainViewModel, Source={StaticResource Locator}}">
 
     <Window.Resources>
@@ -67,7 +68,14 @@
 
         <StackPanel VerticalAlignment="Center">
             <Image Source="Images/logo.png" Width="150"/>
-            <TextBlock Margin  ="0 0 0 0" Text="Employee Management" FontWeight="Light" FontFamily="Helvetica" FontSize="22" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Style="{DynamicResource MaterialDesignHeadline6TextBlock}" 
+                       Margin  ="0 0 0 0" 
+                       Text="Employee Management" 
+                       FontWeight="Light" 
+                       FontFamily="Helvetica" 
+                       FontSize="22" 
+                       Foreground="White" 
+                       HorizontalAlignment="Center"/>
         </StackPanel>
 
 
