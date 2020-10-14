@@ -4,3 +4,5 @@ Sample WPF applications created by using various technologies
     Used Technologies;
     -GalaSoft MVVM
     -EntityFrameWork
+    
+2- CoreWPF - Developed by using .Net Core    
