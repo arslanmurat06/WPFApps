@@ -32,6 +32,14 @@ namespace NorthWindApp.DBLayer
             }
         }
 
+        public List<Customer> GetCustomers()
+        {
+            using (NorthWindModel context = new NorthWindModel())
+            {
+                return context.Customers.ToList();
+            }
+        }
+
         public List<Order> GetOrders()
         {
             using (NorthWindModel context = new NorthWindModel())

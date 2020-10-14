@@ -8,6 +8,7 @@ namespace NorthWindApp.DBLayer
         Employee GetEmployee(int id);
         List<Category> GetCategories();
         List<Order> GetOrders();
+        List<Customer> GetCustomers();
         Order GetOrder(int orderID);
     }
 }

@@ -21,32 +21,32 @@
     </UserControl.Resources>
 
     <Grid>
-        <materialDesign:Flipper
-  Style="{StaticResource MaterialDesignCardFlipper}">
+        <materialDesign:Flipper Style="{StaticResource MaterialDesignCardFlipper}">
             <materialDesign:Flipper.FrontContent>
-                <Grid
-      Height="256"
-      Width="200">
+                <Grid Height="256"
+                      Width="200">
+                    
                     <Grid.RowDefinitions>
-                        <RowDefinition
-          Height="160" />
-                        <RowDefinition
-          Height="*" />
+                        <RowDefinition  Height="160" />
+                        <RowDefinition  Height="*" />
                     </Grid.RowDefinitions>
+                    
                     <materialDesign:ColorZone
-        Mode="PrimaryLight"
-        VerticalAlignment="Stretch">
-                        <materialDesign:PackIcon
-          Kind="AccountCircle"
-          Height="128"
-          Width="128"
-          VerticalAlignment="Center"
-          HorizontalAlignment="Center" />
+                        Mode="PrimaryLight"
+                        VerticalAlignment="Stretch">
+                        <materialDesign:PackIcon 
+                            Kind="AccountCircle"
+                            Height="128"
+                            Width="128" 
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"/>
                     </materialDesign:ColorZone>
+                    
                     <StackPanel
-        Grid.Row="1"
-        HorizontalAlignment="Center"
-        VerticalAlignment="Center">
+                        Grid.Row="1"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        
                         <TextBlock>
                             <TextBlock.Text>
                                 <MultiBinding StringFormat="{}{0} {1}">
@@ -56,94 +56,92 @@
                             </TextBlock.Text>
                         </TextBlock>
 
-
                         <Button
-          Style="{StaticResource MaterialDesignFlatButton}"
-          Command="{x:Static materialDesign:Flipper.FlipCommand}"
-          Margin="0 4 0 0">
+                            Style="{StaticResource MaterialDesignFlatButton}"
+                            Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                            Margin="0 4 0 0">
                             EDIT
                         </Button>
+                        
                     </StackPanel>
                 </Grid>
+                
             </materialDesign:Flipper.FrontContent>
+            
             <materialDesign:Flipper.BackContent>
-                <Grid
-      Height="256"
-      Width="200">
+                
+                <Grid Height="256"
+                      Width="200">
+                    
                     <Grid.RowDefinitions>
-                        <RowDefinition
-          Height="Auto" />
-                        <RowDefinition
-          Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <materialDesign:ColorZone
-        Mode="Accent"
-        Padding="6">
-                        <StackPanel
-          Orientation="Horizontal">
-                            <Button
-            Style="{StaticResource MaterialDesignToolForegroundButton}"
-            Command="{x:Static materialDesign:Flipper.FlipCommand}"
-            HorizontalAlignment="Left">
-                                <materialDesign:PackIcon
-              Kind="ArrowLeft"
-              HorizontalAlignment="Right" />
+                    
+                    <materialDesign:ColorZone Mode="Accent"
+                                              Padding="6">
+                        
+                        <StackPanel Orientation="Horizontal">
+                            
+                            <Button Style="{StaticResource MaterialDesignToolForegroundButton}"
+                                    Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                                    HorizontalAlignment="Left">
+                                <materialDesign:PackIcon Kind="ArrowLeft"
+                                                         HorizontalAlignment="Right" />
                             </Button>
-                            <TextBlock
-            Margin="8 0 0 0"
-            VerticalAlignment="Center">
-          EDIT USER
+                            <TextBlock Margin="8 0 0 0"
+                                       VerticalAlignment="Center">
+                                        EDIT USER
                             </TextBlock>
+                            
                         </StackPanel>
+                        
                     </materialDesign:ColorZone>
-                    <Grid
-        Grid.Row="1"
-        Margin="0 6 0 0"
-        HorizontalAlignment="Center"
-        VerticalAlignment="Top"
-        Width="172">
+                    <Grid Grid.Row="1"
+                          Margin="0 6 0 0"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Top"
+                          Width="172">
+                        
                         <Grid.RowDefinitions>
                             <RowDefinition />
                             <RowDefinition />
                             <RowDefinition />
                             <RowDefinition />
                         </Grid.RowDefinitions>
+                        
                         <TextBox Text="{Binding FirstName}" 
-          materialDesign:HintAssist.Hint="First name"
-          materialDesign:HintAssist.IsFloating="True"
-          Margin="0 12 0 0"/>
-
+                                 materialDesign:HintAssist.Hint="First name"
+                                 materialDesign:HintAssist.IsFloating="True"
+                                 Margin="0 9 0 0"/>
 
                         <TextBox Text="{Binding LastName}"
-          Grid.Row="1"
-          materialDesign:HintAssist.Hint="Last name"
-          materialDesign:HintAssist.IsFloating="True"
-          Margin="0 12 0 0"/>
+                                 Grid.Row="1"
+                                 materialDesign:HintAssist.Hint="Last name"
+                                 materialDesign:HintAssist.IsFloating="True"
+                                 Margin="0 9 0 0"/>
 
 
-                        <StackPanel
-          Grid.Row="2"
-          Orientation="Horizontal"
-          Margin="0 12 0 0"
-          HorizontalAlignment="Right">
-                            <TextBlock
-            VerticalAlignment="Center">
-          Email Contact
-                            </TextBlock>
-                            <ToggleButton
-            Margin="8 0 0 0"></ToggleButton>
+                        <StackPanel Grid.Row="2"
+                                    Orientation="Horizontal"
+                                    Margin="0 12 0 0"
+                                    HorizontalAlignment="Right">
+                            <TextBlock VerticalAlignment="Center" Text="  Email Contact"/>
+                          
+
+                            <ToggleButton Margin="8 0 0 0"></ToggleButton>
+                            
                         </StackPanel>
-                        <StackPanel
-          Grid.Row="3"
-          Orientation="Horizontal"
-          Margin="0 12 0 0"
-          HorizontalAlignment="Right">
-                            <TextBlock
-            VerticalAlignment="Center">
-          Telephone Contact
-                            </TextBlock>
-                            <ToggleButton
-            Margin="8 0 0 0"></ToggleButton>
+                        
+                        <StackPanel Grid.Row="3"
+                                    Orientation="Horizontal"
+                                    Margin="0 12 0 0"
+                                    HorizontalAlignment="Right">
+
+                            <TextBlock VerticalAlignment="Center" Text=" Telephone Contact"/>
+                           
+                            <ToggleButton Margin="8 0 0 0"/>
+                            
                         </StackPanel>
                     </Grid>
                 </Grid>
@@ -151,6 +149,5 @@
         </materialDesign:Flipper>
 
     </Grid>
-
 
 </UserControl>

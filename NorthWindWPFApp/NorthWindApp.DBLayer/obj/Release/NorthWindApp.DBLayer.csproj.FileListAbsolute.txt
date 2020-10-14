@@ -1,0 +1,9 @@
+C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\bin\Release\NorthWindApp.DBLayer.dll.config
+C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\bin\Release\NorthWindApp.DBLayer.dll
+C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\bin\Release\NorthWindApp.DBLayer.pdb
+C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\bin\Release\EntityFramework.dll
+C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\obj\Release\NorthWindApp.DBLayer.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\obj\Release\NorthWindApp.DBLayer.csproj.CopyComplete
+C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\obj\Release\NorthWindApp.DBLayer.dll
+C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\obj\Release\NorthWindApp.DBLayer.pdb

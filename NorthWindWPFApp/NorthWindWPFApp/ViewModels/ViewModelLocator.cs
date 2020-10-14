@@ -15,7 +15,7 @@ namespace NorthWindWPFApp.ViewModels
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
             SimpleIoc.Default.Register<MainViewModel>();
-            SimpleIoc.Default.Register<EmployeeOverviewViewModel>();
+            SimpleIoc.Default.Register<OverviewViewScreenViewModel>();
             SimpleIoc.Default.Register<INorthWindRepository, NorthWindRepository>();
         }
 
@@ -27,11 +27,11 @@ namespace NorthWindWPFApp.ViewModels
             }
         }
 
-        public EmployeeOverviewViewModel EmployeeOverviewViewModel
+        public OverviewViewScreenViewModel EmployeeOverviewViewModel
         {
             get
             {
-                return ServiceLocator.Current.GetInstance<EmployeeOverviewViewModel>();
+                return ServiceLocator.Current.GetInstance<OverviewViewScreenViewModel>();
             }
         }
     }

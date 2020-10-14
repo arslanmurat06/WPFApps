@@ -56,19 +56,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="EmployeeOverview.xaml.cs">
-      <DependentUpon>EmployeeOverview.xaml</DependentUpon>
+    <Compile Include="DataGridUserControl.xaml.cs">
+      <DependentUpon>DataGridUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OverViewScreen.xaml.cs">
+      <DependentUpon>OverViewScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\StaticStrings.cs" />
     <Compile Include="UserControls\EmployeeCardUserControl.xaml.cs">
       <DependentUpon>EmployeeCardUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\EmployeeOverviewUserControl.xaml.cs">
       <DependentUpon>EmployeeOverviewUserControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\EmployeeOverviewViewModel.cs" />
+    <Compile Include="ViewModels\OverviewViewScreenViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\ViewModelLocator.cs" />
-    <Page Include="EmployeeOverview.xaml">
+    <Page Include="DataGridUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OverViewScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

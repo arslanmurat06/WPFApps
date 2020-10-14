@@ -9,19 +9,21 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
 
-        <ItemsControl ItemsSource="{Binding .}">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <local:EmployeeCardUserControl/>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <WrapPanel/>
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-        </ItemsControl>
+        <ScrollViewer >
+            <ItemsControl ItemsSource="{Binding .}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <local:EmployeeCardUserControl/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </ScrollViewer>
 
-     
+
     </Grid>
 </UserControl>

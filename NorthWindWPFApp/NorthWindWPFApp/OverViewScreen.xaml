@@ -1,0 +1,120 @@
+﻿<Window x:Class="NorthWindWPFApp.OverViewScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NorthWindWPFApp"
+        mc:Ignorable="d" Height="600" Width="1024"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:uControls="clr-namespace:NorthWindWPFApp.UserControls"
+        WindowStartupLocation="CenterScreen"
+        DataContext="{Binding EmployeeOverviewViewModel, Source={StaticResource Locator}}" 
+         WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="20" RenderingBias="Quality" ShadowDepth="1"/>
+            </Grid.Effect>
+            <Grid.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#7be9f6" Offset="0.0"/>
+                    <GradientStop Color="#f083da" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid >
+                <Grid.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#7be9f6" Offset="0.0"/>
+                        <GradientStop Color="#f083da" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <TextBlock Foreground="White" Grid.Row="0" Text="DASHBOARD" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Vladimir Script" FontSize="24"/>
+            </Grid>
+
+            <StackPanel Grid.Row="1">
+                <Button Margin="10" Click="Show_Employee_Click">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="Person" VerticalAlignment="Center"/>
+                        <TextBlock Text="EMPLOYEES" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft JhengHei Light"/>
+                    </Grid>
+                </Button>
+
+                <Button Margin="10" Click="Show_Customer_Click">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="CustomerService" VerticalAlignment="Center"/>
+                        <TextBlock Text="CUSTOMERS" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft JhengHei Light"/>
+                    </Grid>
+                </Button>
+
+                <Button Margin="10" Click="Show_Orders_Click">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="CustomerService" VerticalAlignment="Center"/>
+                        <TextBlock Text="ORDERS" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft JhengHei Light"/>
+                    </Grid>
+                </Button>
+            </StackPanel>
+
+        </Grid>
+        
+        <!--APPBAR-->
+
+        <Grid x:Name="GridBar" Grid.ColumnSpan="2" Background="#FF8522BD" MouseDown="GridBar_MouseDown">
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+                <Button Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+                        Width="25" 
+                        Height="25" 
+                        Background="{x:Null}" 
+                        BorderBrush="{x:Null}" 
+                        Foreground="White"
+                        Click="Minimize_Button_Click">
+                    <materialDesign:PackIcon Kind="WindowMinimize"/>
+                </Button>
+
+                <Button Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+                        Width="25" 
+                        Height="25" 
+                        Background="{x:Null}" 
+                        BorderBrush="{x:Null}" 
+                        Foreground="White"
+                        Click="Maximize_Button_Click">
+                    <materialDesign:PackIcon Kind="WindowMaximize"/>
+                </Button>
+
+                <Button Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+                        Width="25" 
+                        Height="25" 
+                        Background="{x:Null}" 
+                        BorderBrush="{x:Null}" 
+                        Foreground="White"
+                        Click="Close_Button_Click">
+                    <materialDesign:PackIcon Kind="Power"/>
+                </Button>
+            </StackPanel>
+
+        </Grid>
+
+
+        <!--APPBAR-->
+        <Grid Grid.Column="1" Grid.Row="1" x:Name="PartGrid">
+                <uControls:EmployeeOverviewUserControl DataContext="{Binding Employees}" />
+
+        </Grid>
+    </Grid>
+</Window>

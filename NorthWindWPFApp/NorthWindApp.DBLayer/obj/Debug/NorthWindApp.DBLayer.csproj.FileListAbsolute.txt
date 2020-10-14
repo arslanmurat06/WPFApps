@@ -12,7 +12,6 @@ C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\bin\Debu
 C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\bin\Debug\NorthWindApp.DBLayer.pdb
 C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\bin\Debug\EntityFramework.dll
-C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\obj\Debug\NorthWindApp.DBLayer.csprojAssemblyReference.cache
 C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\obj\Debug\NorthWindApp.DBLayer.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\obj\Debug\NorthWindApp.DBLayer.csproj.CopyComplete
 C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindApp.DBLayer\obj\Debug\NorthWindApp.DBLayer.dll

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\user\source\repos\WPFApps\NorthWindWPFApp\NorthWindWPFApp\App.xaml
-4-1824391952
+5883961336
 
-121901706314
+14186988337
 128-41466519
-EmployeeOverview.xaml;MainWindow.xaml;UserControls\EmployeeCardUserControl.xaml;UserControls\EmployeeOverviewUserControl.xaml;
+DataGridUserControl.xaml;EmployeeOverview.xaml;MainWindow.xaml;UserControls\EmployeeCardUserControl.xaml;UserControls\EmployeeOverviewUserControl.xaml;
 
-True
+False
 

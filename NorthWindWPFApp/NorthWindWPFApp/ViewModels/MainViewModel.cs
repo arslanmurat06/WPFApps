@@ -32,8 +32,8 @@ namespace NorthWindWPFApp.ViewModels
 
         private void LoginAsync()
         {
-            var employeeScreen = new EmployeeOverview();
-            employeeScreen.Show();
+            var overViewScreen = new OverViewScreen();
+            overViewScreen.Show();
             CloseScreen?.Invoke();
 
         }
