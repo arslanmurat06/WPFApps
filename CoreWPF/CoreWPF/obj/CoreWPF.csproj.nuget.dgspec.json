@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\CoreWPF\\CoreWPF\\CoreWPF.csproj": {}
+    "C:\\Users\\user\\source\\repos\\WPFApps\\CoreWPF\\CoreWPF\\CoreWPF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\CoreWPF\\CoreWPF\\CoreWPF.csproj": {
+    "C:\\Users\\user\\source\\repos\\WPFApps\\CoreWPF\\CoreWPF\\CoreWPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\CoreWPF\\CoreWPF\\CoreWPF.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\WPFApps\\CoreWPF\\CoreWPF\\CoreWPF.csproj",
         "projectName": "CoreWPF",
-        "projectPath": "C:\\Users\\user\\source\\repos\\CoreWPF\\CoreWPF\\CoreWPF.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\WPFApps\\CoreWPF\\CoreWPF\\CoreWPF.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\CoreWPF\\CoreWPF\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\WPFApps\\CoreWPF\\CoreWPF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,9 +40,31 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "MaterialDesignThemes": {
               "target": "Package",
               "version": "[3.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
             },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",

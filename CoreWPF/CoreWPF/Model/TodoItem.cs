@@ -13,7 +13,7 @@ namespace CoreWPF.Model
         public DateTime CreatedDate { get; set; }
         public Category Category { get; set; }
 
-        public string Color { get; set; }
+        public string BackColor { get; set; }
 
     }
 }

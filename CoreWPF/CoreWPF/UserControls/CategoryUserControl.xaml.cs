@@ -22,5 +22,10 @@ namespace CoreWPF.UserControls
         {
             InitializeComponent();
         }
+
+        private void ListView_Selected(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

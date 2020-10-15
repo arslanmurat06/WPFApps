@@ -21,20 +21,7 @@ namespace CoreWPF.UserControls
         public TodoSimpleCardUserControl()
         {
             InitializeComponent();
-            //ItemBorder.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom(MyColor));  
         }
 
-        public static readonly DependencyProperty MyColorProperty =DependencyProperty.Register("Color", typeof(Brush), typeof(TodoSimpleCardUserControl));
-        public string Color
-        {
-            get
-            {
-                return this.GetValue(MyColorProperty) as string;
-            }
-            set
-            {
-                this.SetValue(MyColorProperty, value);
-            }
-        }
     }
 }

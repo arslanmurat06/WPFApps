@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\user\source\repos\CoreWPF\CoreWPF\obj\Debug\netcoreapp3.1\
+C:\Users\user\source\repos\WPFApps\CoreWPF\CoreWPF\obj\Debug\netcoreapp3.1\
 CoreWPF
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\user\source\repos\CoreWPF\CoreWPF\App.xaml
+C:\Users\user\source\repos\WPFApps\CoreWPF\CoreWPF\App.xaml
 3779699950
 
-11854132967
-223886899278
+17-2069044170
+241589138612
 MainWindow.xaml;UserControls\CategoryUserControl.xaml;UserControls\TodoSimpleCardUserControl.xaml;
 
-True
+False
 

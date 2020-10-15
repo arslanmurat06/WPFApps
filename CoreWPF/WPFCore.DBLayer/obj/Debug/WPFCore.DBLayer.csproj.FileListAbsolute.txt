@@ -1,0 +1,9 @@
+C:\Users\user\source\repos\WPFApps\CoreWPF\WPFCore.DBLayer\bin\Debug\WPFCore.DBLayer.dll.config
+C:\Users\user\source\repos\WPFApps\CoreWPF\WPFCore.DBLayer\bin\Debug\WPFCore.DBLayer.dll
+C:\Users\user\source\repos\WPFApps\CoreWPF\WPFCore.DBLayer\bin\Debug\WPFCore.DBLayer.pdb
+C:\Users\user\source\repos\WPFApps\CoreWPF\WPFCore.DBLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\WPFApps\CoreWPF\WPFCore.DBLayer\bin\Debug\EntityFramework.dll
+C:\Users\user\source\repos\WPFApps\CoreWPF\WPFCore.DBLayer\obj\Debug\WPFCore.DBLayer.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\WPFApps\CoreWPF\WPFCore.DBLayer\obj\Debug\WPFCore.DBLayer.csproj.CopyComplete
+C:\Users\user\source\repos\WPFApps\CoreWPF\WPFCore.DBLayer\obj\Debug\WPFCore.DBLayer.dll
+C:\Users\user\source\repos\WPFApps\CoreWPF\WPFCore.DBLayer\obj\Debug\WPFCore.DBLayer.pdb

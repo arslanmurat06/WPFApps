@@ -1,4 +1,10 @@
-﻿using CoreWPF.ViewModels;
+﻿using AutoMapper;
+using CoreWPF.MapperProfile;
+using CoreWPF.Model;
+using CoreWPF.Models;
+using CoreWPF.Repository;
+using CoreWPF.ViewModels;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -9,6 +15,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+
 
 namespace CoreWPF
 {
@@ -37,14 +44,20 @@ namespace CoreWPF
 
         }
 
+        
+
         private void ConfigureServices(IConfiguration configuration,
         IServiceCollection services)
         {
+           
             
+            services.AddScoped<IToDoRepository, ToDoRepository>();
             services.AddSingleton<MainViewModel>();
 
             // Register all the Windows of the applications.
             services.AddTransient<MainWindow>();
+
+            services.AddAutoMapper(typeof(AutoMapperProfile));
         }
 
         protected override async void OnStartup(StartupEventArgs e)

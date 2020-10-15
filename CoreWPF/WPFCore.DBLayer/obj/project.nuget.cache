@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WDIn7U6loz8voOK9+UfSsGVyvovxfxTlH6tn6HCzWJuz7wa5mMf+1SQ/5InmosfRHaM2aSIwlsqmuV/GyhCH2A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\WPFApps\\CoreWPF\\WPFCore.DBLayer\\WPFCore.DBLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

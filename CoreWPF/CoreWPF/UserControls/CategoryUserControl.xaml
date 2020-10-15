@@ -15,11 +15,13 @@
 
             <TextBlock Grid.Row="0" Text="{Binding CategoryName}" Foreground="White" FontSize="25" HorizontalAlignment="Left"/>
             <Grid Grid.Row="1" HorizontalAlignment="Left" Margin="-5 0 0 0">
-                
-                  <ListView ItemsSource="{Binding TodoItems}" >
-                      <ListView.ItemTemplate>
-                          <DataTemplate>
-                              <local:TodoSimpleCardUserControl Color="{Binding BackColor}"/>
+
+            <ListView ItemsSource="{Binding TodoItems}" >
+
+
+                <ListView.ItemTemplate>
+                        <DataTemplate>
+                        <local:TodoSimpleCardUserControl Background="{Binding BackColor}"/>
                               </DataTemplate>
                       </ListView.ItemTemplate>
                       </ListView>
