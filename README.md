@@ -11,3 +11,5 @@ Sample WPF applications created by using various technologies
     -MVVM Pattern
     -.Net Core
     -GalaSoft MVVM
+    -EntityFramework Core
+    -AutoMapper
