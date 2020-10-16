@@ -6,7 +6,7 @@ Sample WPF applications created by using various technologies
     -GalaSoft MVVM
     -EntityFrameWork
     
-2- CoreWPF - Developed by using .Net Core    
+2- CoreWPF TODO APP - Developed by using .Net Core    
     Used Technologies;
     -MVVM Pattern
     -.Net Core
