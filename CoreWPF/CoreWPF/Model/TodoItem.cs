@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoreWPF.Model
 {
-    public class TodoItem
+    public class TodoItem:IBaseModel
     {
         public int ID { get; set; }
         public string Title { get; set; }

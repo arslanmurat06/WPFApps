@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CoreWPF.Models
 {
-    public partial class TodoItems
+    public partial class TodoItems:IBaseEntity
     {
         public int Id { get; set; }
         public int CategoryId { get; set; }

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\user\source\repos\WPFApps\CoreWPF\CoreWPF\App.xaml
-3779699950
+41052679835
 
-17-2069044170
-241589138612
-MainWindow.xaml;UserControls\CategoryUserControl.xaml;UserControls\TodoSimpleCardUserControl.xaml;
+22-764626963
+246625881091
+MainWindow.xaml;UserControls\CategoryUserControl.xaml;UserControls\PopupUserControl.xaml;UserControls\TodoSimpleCardUserControl.xaml;
 
 False
 

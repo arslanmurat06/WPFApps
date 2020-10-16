@@ -6,6 +6,8 @@ namespace CoreWPF.Repository
 {
     public interface IToDoRepository
     {
-        List<TodoItem> GetToDoItems();
+        List<IBaseModel> GetToDoItems();
+        List<IBaseModel> GetCategories();
+        List<IBaseModel> Save(List<IBaseModel> models);
     }
 }

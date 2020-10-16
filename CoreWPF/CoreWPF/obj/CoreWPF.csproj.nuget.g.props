@@ -23,5 +23,6 @@
     <PkgMvvmLight Condition=" '$(PkgMvvmLight)' == '' ">C:\Users\user\.nuget\packages\mvvmlight\5.4.1.1</PkgMvvmLight>
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\user\.nuget\packages\microsoft.entityframeworkcore.tools\3.1.9</PkgMicrosoft_EntityFrameworkCore_Tools>
     <PkgMaterialDesignThemes Condition=" '$(PkgMaterialDesignThemes)' == '' ">C:\Users\user\.nuget\packages\materialdesignthemes\3.2.0</PkgMaterialDesignThemes>
+    <PkgExtended_Wpf_Toolkit Condition=" '$(PkgExtended_Wpf_Toolkit)' == '' ">C:\Users\user\.nuget\packages\extended.wpf.toolkit\4.0.1</PkgExtended_Wpf_Toolkit>
   </PropertyGroup>
 </Project>

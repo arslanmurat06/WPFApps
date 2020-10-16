@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:validation="clr-namespace:CoreWPF.Validation"
         xmlns:local="clr-namespace:CoreWPF"
         xmlns:userControls="clr-namespace:CoreWPF.UserControls"
         mc:Ignorable="d"
@@ -13,6 +15,153 @@
         AllowsTransparency="True"
         Height="600" Width="1024"
         DataContext="{Binding Source={StaticResource Locator}, Path=MainViewModel}">
+
+
+    <materialDesign:DialogHost BorderBrush="{DynamicResource MaterialDesignDivider}" >
+        <materialDesign:DialogHost.DialogContent >
+            <materialDesign:DialogHost BorderBrush="{DynamicResource MaterialDesignDivider}" x:Name="SaveCategoryDialog">
+
+                <materialDesign:DialogHost.DialogContent>
+                    <Grid Width="300" Height="300" HorizontalAlignment="Center">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Category" Foreground="{StaticResource PrimaryHueMidBrush}" Width="50" Height="50"/>
+                            <TextBlock VerticalAlignment="Center" FontSize="16" Foreground="Gray"   TextWrapping="Wrap">
+                            Create a new category
+                            </TextBlock>
+                        </StackPanel>
+                        
+                           
+                             
+
+                         <TextBlock Grid.Row="1" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" Text="Title"/>
+                        <TextBox  materialDesign:HintAssist.HelperText="Title cannot be empty" Margin="10" Grid.Row="1" materialDesign:HintAssist.Hint="Enter title"  VerticalAlignment="Center"  HorizontalAlignment="Left" Width="200" Grid.Column="1">
+
+                            <TextBox.Text>
+                                <Binding Path="SavedCategoryName" UpdateSourceTrigger="PropertyChanged">
+                                    <Binding.ValidationRules>
+                                        <validation:NotEmptyValidationRule ValidatesOnTargetUpdated="True"/>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+
+
+
+                        <TextBlock Grid.Row="2" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" Text="Background Color"/>
+                        <xctk:ColorPicker SelectedColorChanged="ClrPcker_Background_SelectedColorChanged"  Name="ClrPcker_Background" Grid.Row="2" Grid.Column="1" Width="50" Height="30" HorizontalAlignment="Left"/>
+
+
+
+                        <StackPanel Grid.Row="3" Grid.ColumnSpan="2"  Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="15">
+                            <Button Command="{Binding SaveCategoryCommand}" Style="{DynamicResource MaterialDesignFlatButton}" Margin="4" VerticalAlignment="Center">
+                                Save
+                            </Button>
+                            <Button Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" Style="{DynamicResource MaterialDesignFlatButton}" Margin="4" VerticalAlignment="Center">
+                                Cancel
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </materialDesign:DialogHost.DialogContent>
+
+                <Grid Width="400" Height="400" HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="1*"/>
+                    
+                    
+
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="15" >
+                    <materialDesign:PackIcon Kind="ToDo" Foreground="{StaticResource PrimaryHueMidBrush}" Width="50" Height="50"/>
+                        <TextBlock Text="{Binding DialogTitle}" x:Name="DialogTitle" Foreground="Gray" FontSize="18" Width="200"  Margin="15 10" TextWrapping="Wrap"/>
+
+                    </StackPanel>
+
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30" Grid.Row="0" Grid.Column="0" Text="Category"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1">
+                            <ComboBox SelectedItem="{Binding SelectedCategory ,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"   materialDesign:HintAssist.Hint="Choose Category" ItemsSource="{Binding Categories,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                        <Button Height="25" Width="25" Margin="25 5 0 0" Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+                                ToolTip="MaterialDesignFloatingActionMiniLightButton"
+                                Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}">
+                            <materialDesign:PackIcon
+                                Kind="Add"
+                                Height="15"
+                                Width="15" />
+                        </Button>
+                      
+                    </StackPanel>
+
+                    <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30" Grid.Row="1" Grid.Column="0" Text="Title"/>
+                        <TextBox  materialDesign:HintAssist.HelperText="Title cannot be empty"  materialDesign:HintAssist.Hint="Enter title"  VerticalAlignment="Center"  HorizontalAlignment="Left" Width="150" Grid.Row="1" Grid.Column="1">
+
+                            <TextBox.Text>
+                                <Binding Path="SavedTodoTitle" UpdateSourceTrigger="PropertyChanged">
+                                    <Binding.ValidationRules>
+                                        <validation:NotEmptyValidationRule ValidatesOnTargetUpdated="True"/>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+
+                        </TextBox>
+
+                        <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30" Grid.Row="2" Grid.Column="0" Text="Description" />
+                        <RichTextBox materialDesign:HintAssist.HelperText="Description cannot be empty"  Grid.Row="2" Grid.Column="1"
+                                 MinWidth="180"
+                                 AcceptsReturn="True"
+                                 IsDocumentEnabled="True"
+                                 VerticalScrollBarVisibility="Auto"
+                                 SpellCheck.IsEnabled="True"
+                                 materialDesign:HintAssist.Hint="Description"
+                                 Height="80"
+                                 >
+                            <FlowDocument>
+                                <Paragraph>
+                                    <Run Text="{Binding SavedTodoDescription}"/>
+                                </Paragraph>
+                            </FlowDocument>
+                        </RichTextBox>
+
+                    </Grid>
+               
+                <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="15">
+                        <Button Command="{Binding SaveTodoItemCommand}" Style="{DynamicResource MaterialDesignFlatButton}" Margin="4" VerticalAlignment="Center">
+                        Save
+                    </Button>
+                    <Button Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" Style="{DynamicResource MaterialDesignFlatButton}" Margin="4" VerticalAlignment="Center">
+                        Cancel
+                    </Button>
+                </StackPanel>
+            </Grid>
+                
+            </materialDesign:DialogHost>
+
+
+        </materialDesign:DialogHost.DialogContent>
         <Grid >
 
         <Grid.ColumnDefinitions>
@@ -99,21 +248,22 @@
                             </ItemsControl.ItemsPanel>
                         </ItemsControl>
             </Grid>
-
-
             </ScrollViewer>
 
-            <StackPanel Grid.Row="2" HorizontalAlignment="Right" Margin=" 0 -15 30 0">
-                
+            <StackPanel Grid.Row="2" Margin="0 -20 20 0" HorizontalAlignment="Right" >
+
                 <Button Width="45" Height="45" Background="#0061AF" 
                         Style="{StaticResource MaterialDesignFloatingActionDarkButton}"
-                        ToolTip="MaterialDesignFloatingActionDarkButton">
+                        ToolTip="MaterialDesignFloatingActionDarkButton"
+                       Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}">
                     <materialDesign:PackIcon
                         Kind="Add"
                         Height="24"
                         Width="24" />
                 </Button>
             </StackPanel>
+
         </Grid>
     </Grid>
+    </materialDesign:DialogHost>
 </Window>

@@ -10,6 +10,9 @@
     <Compile Update="UserControls\CategoryUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserControls\PopupUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControls\TodoSimpleCardUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,6 +22,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControls\CategoryUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\PopupUserControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControls\TodoSimpleCardUserControl.xaml">

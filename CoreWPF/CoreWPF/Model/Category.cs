@@ -1,4 +1,5 @@
-﻿using GalaSoft.MvvmLight;
+﻿using AutoMapper.Mappers;
+using GalaSoft.MvvmLight;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Windows.Media;
 
 namespace CoreWPF.Model
 {
-    public class Category:ViewModelBase
+    public class Category:ViewModelBase,IBaseModel
     {
         public int ID { get; set; }
         public string CategoryName { get; set; }
@@ -29,6 +30,10 @@ namespace CoreWPF.Model
                     
                 }
             }
+        }
+        public override string ToString()
+        {
+            return CategoryName;
         }
     }
 }

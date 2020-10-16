@@ -7,9 +7,9 @@
              Width="350"
              mc:Ignorable="d">
     
-        <Grid HorizontalAlignment="left">
+        <Grid HorizontalAlignment="left" Margin="0 50 0 0 ">
             <Grid.RowDefinitions>
-                <RowDefinition Height="50"/>
+                <RowDefinition Height="35"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
@@ -17,17 +17,12 @@
             <Grid Grid.Row="1" HorizontalAlignment="Left" Margin="-5 0 0 0">
 
             <ListView ItemsSource="{Binding TodoItems}" >
-
-
                 <ListView.ItemTemplate>
                         <DataTemplate>
                         <local:TodoSimpleCardUserControl Background="{Binding BackColor}"/>
                               </DataTemplate>
                       </ListView.ItemTemplate>
                       </ListView>
-
             </Grid>
-
         </Grid>
-    
 </UserControl>

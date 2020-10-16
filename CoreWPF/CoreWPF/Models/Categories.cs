@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CoreWPF.Models
 {
-    public partial class Categories
+    public partial class Categories:IBaseEntity
     {
         public Categories()
         {
