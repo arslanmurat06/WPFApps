@@ -6,10 +6,12 @@
              xmlns:local="clr-namespace:CoreWPF.UserControls"
              mc:Ignorable="d" 
              x:Name="userControl"
+             Width="400"
+             Height="400"
              >
 
     <Border UIElement.PreviewMouseLeftButtonDown="Border_PreviewMouseLeftButtonDown">
-        <Grid MinWidth="200">
+        <Grid>
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>

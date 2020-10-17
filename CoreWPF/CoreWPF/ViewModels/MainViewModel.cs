@@ -44,7 +44,7 @@ namespace CoreWPF.ViewModels
             SavedTodoTitle = todoItem.Title;
             SavedTodoDescription = todoItem.Description;
             SelectedCategory = todoItem.Category;
-            DialogTitle = "Edit TodoItem";
+            DialogTitle = "Edit Todo Item";
             MaterialDesignThemes.Wpf.DialogHost.OpenDialogCommand.Execute(null, null);
         }
 
