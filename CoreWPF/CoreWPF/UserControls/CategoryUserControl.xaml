@@ -4,10 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CoreWPF.UserControls"
-             Width="350"
+             Width="450"
              mc:Ignorable="d">
     
-        <Grid HorizontalAlignment="left" Margin="0 50 0 0 ">
+        <Grid HorizontalAlignment="left" Margin="10 50 0 0 ">
             <Grid.RowDefinitions>
                 <RowDefinition Height="35"/>
                 <RowDefinition Height="*"/>

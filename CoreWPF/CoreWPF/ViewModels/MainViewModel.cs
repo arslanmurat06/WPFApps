@@ -28,14 +28,27 @@ namespace CoreWPF.ViewModels
         public ICommand OpenTodoItem { get; set; }
 
         public Action CloseSaveCategoryAction { get; set; }
+       
         public MainViewModel(IToDoRepository repository)
         {
             Messenger.Default.Register<EditTodoItemMessage>(this, OnEditTodoItemMessageReceived);
+            Messenger.Default.Register<DeleteTodoItemMessage>(this, OnDeleteTodoItemMessageReceived);
             SaveCategoryCommand = new RelayCommand(SaveCategory);
             SaveTodoItemCommand = new RelayCommand(SaveTodo);
             _repository = repository;
             _categories = _repository.GetCategories();
+        }
 
+        private void OnDeleteTodoItemMessageReceived(DeleteTodoItemMessage obj)
+        {
+            DeleteTodo(obj.TodoItem);
+        }
+
+        private void DeleteTodo(IBaseModel deletedTodo)
+        {
+            _repository.Remove(deletedTodo);
+            _categories=_repository.GetCategories();
+            RaisePropertyChanged(() => Categories);
         }
 
         private void OnEditTodoItemMessageReceived(EditTodoItemMessage obj)

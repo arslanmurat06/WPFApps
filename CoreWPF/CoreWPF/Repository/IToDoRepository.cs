@@ -9,5 +9,6 @@ namespace CoreWPF.Repository
         List<IBaseModel> GetToDoItems();
         List<IBaseModel> GetCategories();
         List<IBaseModel> Save(List<IBaseModel> models);
+        void Remove(IBaseModel removedItem);
     }
 }

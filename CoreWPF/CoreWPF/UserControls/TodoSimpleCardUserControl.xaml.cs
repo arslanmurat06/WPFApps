@@ -35,8 +35,14 @@ namespace CoreWPF.UserControls
 
         private void Border_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //MaterialDesignThemes.Wpf.DialogHost.OpenDialogCommand.Execute(null, null);
             Messenger.Default.Send<EditTodoItemMessage>(new EditTodoItemMessage(item ));
         }
+
+        private void Remove_Todo_Click(object sender, RoutedEventArgs e)
+        {
+            Messenger.Default.Send<DeleteTodoItemMessage>(new DeleteTodoItemMessage(item));
+        }
+
+     
     }
 }

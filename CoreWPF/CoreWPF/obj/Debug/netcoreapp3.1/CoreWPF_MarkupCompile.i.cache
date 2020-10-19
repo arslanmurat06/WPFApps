@@ -12,9 +12,9 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\user\source\repos\WPFApps\CoreWPF\CoreWPF\App.xaml
 41052679835
 
-22-764626963
+23-971853518
 246625881091
 MainWindow.xaml;UserControls\CategoryUserControl.xaml;UserControls\PopupUserControl.xaml;UserControls\TodoSimpleCardUserControl.xaml;
 
-False
+True
 

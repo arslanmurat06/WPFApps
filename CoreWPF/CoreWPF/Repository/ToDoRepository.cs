@@ -90,5 +90,18 @@ namespace CoreWPF.Repository
             return returnedEntities.Select(x => _mapper.Map(x, entityType, modelType) as IBaseModel).ToList();
 
         }
+
+
+        public void Remove(IBaseModel removedItem)
+        {
+           using (var context = new ToDoContext())
+            {
+                var deletedEntity = _mapper.Map<TodoItems>(removedItem);
+               context.Remove(deletedEntity);
+                context.SaveChanges();
+            }
+            
+        }
+
     }
 }
