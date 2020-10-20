@@ -2,6 +2,7 @@
 using CoreWPF.Model;
 using CoreWPF.ViewModels;
 using GalaSoft.MvvmLight.Messaging;
+using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -39,8 +40,14 @@ namespace CoreWPF.UserControls
             Messenger.Default.Send<EditTodoItemMessage>(new EditTodoItemMessage(item ));
         }
 
-        private void Remove_Todo_Click(object sender, RoutedEventArgs e) =>
-            (App.ServiceProvider.GetService(typeof(MainViewModel)) as MainViewModel).DeleteTodo(item);
+        private void Remove_Todo_Click(object sender, RoutedEventArgs e)
+        {
+            var result =MessageBox.Show("Are you sure to delete todo item?", "Warning", MessageBoxButton.OKCancel);
+            if(result ==MessageBoxResult.OK)
+                (App.ServiceProvider.GetService(typeof(MainViewModel)) as MainViewModel).DeleteTodo(item);
+           
+        }
+           
 
      
     }
