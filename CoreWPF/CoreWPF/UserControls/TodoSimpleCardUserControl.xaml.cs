@@ -1,5 +1,6 @@
 ﻿using CoreWPF.Messages;
 using CoreWPF.Model;
+using CoreWPF.ViewModels;
 using GalaSoft.MvvmLight.Messaging;
 using System;
 using System.Collections.Generic;
@@ -38,10 +39,8 @@ namespace CoreWPF.UserControls
             Messenger.Default.Send<EditTodoItemMessage>(new EditTodoItemMessage(item ));
         }
 
-        private void Remove_Todo_Click(object sender, RoutedEventArgs e)
-        {
-            Messenger.Default.Send<DeleteTodoItemMessage>(new DeleteTodoItemMessage(item));
-        }
+        private void Remove_Todo_Click(object sender, RoutedEventArgs e) =>
+            (App.ServiceProvider.GetService(typeof(MainViewModel)) as MainViewModel).DeleteTodo(item);
 
      
     }

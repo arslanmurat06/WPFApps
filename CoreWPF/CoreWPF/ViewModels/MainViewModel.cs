@@ -32,7 +32,6 @@ namespace CoreWPF.ViewModels
         public MainViewModel(IToDoRepository repository)
         {
             Messenger.Default.Register<EditTodoItemMessage>(this, OnEditTodoItemMessageReceived);
-            Messenger.Default.Register<DeleteTodoItemMessage>(this, OnDeleteTodoItemMessageReceived);
             SaveCategoryCommand = new RelayCommand(SaveCategory);
             SaveTodoItemCommand = new RelayCommand(SaveTodo);
             _repository = repository;
@@ -44,11 +43,12 @@ namespace CoreWPF.ViewModels
             DeleteTodo(obj.TodoItem);
         }
 
-        private void DeleteTodo(IBaseModel deletedTodo)
+        public void DeleteTodo(IBaseModel deletedTodo)
         {
             _repository.Remove(deletedTodo);
             _categories=_repository.GetCategories();
             RaisePropertyChanged(() => Categories);
+            RaisePropertyChanged(() => FilteredCategories);
         }
 
         private void OnEditTodoItemMessageReceived(EditTodoItemMessage obj)
@@ -169,6 +169,7 @@ namespace CoreWPF.ViewModels
                 _repository.Save(new List<IBaseModel> { SavedTodoItem });
                 _categories = _repository.GetCategories();
                 RaisePropertyChanged(() => Categories);
+                RaisePropertyChanged(() => FilteredCategories);
                 SavedTodoDescription = "";
                 SavedTodoTitle = "";
                 SelectedCategory = null;
@@ -185,11 +186,20 @@ namespace CoreWPF.ViewModels
                 var savedCat = _repository.Save(new List<IBaseModel> { SavedCategory }).First();
                 _categories.Add(savedCat);
                 RaisePropertyChanged(() => Categories);
+                RaisePropertyChanged(()=> FilteredCategories);
                 SavedCategoryName = "";
                 SavedCategoryColor = "";
                 CloseSaveCategoryAction?.Invoke();
             }
         }
+
+       
+
+        public List<IBaseModel> FilteredCategories
+        {
+            get { return _categories.Cast<Category>().Where(c=>c.TodoItems.Any()).Cast<IBaseModel>().ToList(); }
+        }
+
 
         private List<IBaseModel> _categories;
 
@@ -202,6 +212,7 @@ namespace CoreWPF.ViewModels
                 RaisePropertyChanged(() => Categories);
             }
         }
+
     }
 }
 

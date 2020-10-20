@@ -235,7 +235,7 @@
 
             <ScrollViewer Grid.Row="1">
             <Grid  Margin="0 20 0 0">
-                        <ItemsControl ItemsSource="{Binding Categories}">
+                        <ItemsControl ItemsSource="{Binding FilteredCategories}">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
                                     <userControls:CategoryUserControl/>

@@ -10,5 +10,6 @@ namespace CoreWPF.ViewModels
     {
         public MainViewModel MainViewModel
          => App.ServiceProvider.GetRequiredService<MainViewModel>();
+
     }
 }
